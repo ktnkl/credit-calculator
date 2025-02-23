@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credit Calculator</title>
+    <script type="module" crossorigin src="/credit-calculator/assets/index-Xscy0sAx.js"></script>
+    <link rel="stylesheet" crossorigin href="/credit-calculator/assets/index-C4USYFS6.css">
+  </head>
+  <body>
+    <div id="app">
+      <section class="main-block">
+        <form id="form" class="form">
+          <label class="form-item">
+            <span class="form-item__label">
+              Сумма кредита, &#8381;
+            </span>
+            <input 
+              type="number" 
+              name="creditAmount" 
+              id="credit-sum" 
+              placeholder="0"
+              class="form-item__input"
+            >
+          </label>
+          <label class="form-item">
+            <span class="form-item__label">
+              Срок кредита, мес.
+            </span>
+            <input 
+              type="text" 
+              name="creditTerm" 
+              id="credit-term" 
+              placeholder="0"
+              class="form-item__input"
+            >
+          </label>
+          <label class="form-item">
+            <span class="form-item__label">
+              Кредитная ставка, %
+            </span>
+            <input 
+              type="text" 
+              name="creditPercent" 
+              id="credit-percent" 
+              placeholder="0"
+              class="form-item__input"
+              >
+          </label>
+          <button type="submit" class="form__button">Расчитать</button>
+        </form>
+        <section id="results" class="results">
+          <div class="results-item">
+            <span>Ежемесячный платеж: </span>
+            <span id="monthly-result">0</span>
+          </div>
+          <div class="results-item">
+            <span>Общая сумма выплаты по кредиту: </span>
+            <span id="total-result">0</span>
+          </div>
+        </section>
+      </section>
+      
+    </div>
+  </body>
+</html>
